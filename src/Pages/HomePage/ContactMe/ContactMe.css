@@ -1,0 +1,9 @@
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form form input,textarea{
+    width: 75%;
+}

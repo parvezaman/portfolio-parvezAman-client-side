@@ -4,6 +4,7 @@ import Resume from '../../Resume/Resume';
 import './Home.css';
 import myResume from '../../Resume/MdAmanullahParvez_Web_Developer_27_11_2021.pdf';
 import MyProjects from '../MyProjects/MyProjects';
+import ContactMe from '../ContactMe/ContactMe';
 const Home = () => {
     return (
         <div>
@@ -25,6 +26,9 @@ const Home = () => {
                 <h2 className="text-center mt-5">My Projects</h2>
             <div>
                 <MyProjects/>
+            </div>
+            <div className="d-flex flex-column mb-5">
+                <ContactMe/>
             </div>
         </div>
     );
