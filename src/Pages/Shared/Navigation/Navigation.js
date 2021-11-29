@@ -113,7 +113,7 @@ const Navigation = () => {
                             <MenuIcon />
                         </IconButton>
                         <Typography className={ourNavLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <BsFillCameraFill /> Shop&Shoot
+                            <img style={{width:'35px'}} src="https://i.ibb.co/3dykCd4/121573997-2706873479572031-3140401387895271813-o-removebg-preview-1.jpg" alt="" /> MdAmanUllahParvez
                         </Typography>
 
                         <Box className={navItemContainer}>

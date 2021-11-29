@@ -1,10 +1,12 @@
+import { Button } from '@mui/material';
 import React from 'react';
-
+import Resume from '../../Resume/Resume';
+import myResume from '../../Resume/MdAmanullahParvez_Web_Developer_27_11_2021.pdf';
 const Home = () => {
     return (
         <div>
             <h3>This is Home</h3>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eveniet similique ipsa praesentium, dolores vero eligendi reprehenderit doloremque delectus accusantium optio exercitationem voluptatibus debitis. Rem quasi quidem quibusdam omnis esse, magni soluta dolores molestiae voluptates dicta magnam praesentium asperiores animi sapiente! Minima, sit eos suscipit ab, qui officia nesciunt illum ipsa veniam, esse eum architecto.</p>
+            <Button><a target="_blank" href={myResume} download>Click to download</a></Button>
         </div>
     );
 };
