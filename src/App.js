@@ -16,14 +16,15 @@ function App() {
         <Switch>
           <Route exact path="/" >
             <Home />
-            <Resume/>
           </Route>
           <Route path="/home">
             <Home />
-            <Resume />
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/resume">
+            <Resume />
           </Route>
           <Route path="*">
             <NotFound />

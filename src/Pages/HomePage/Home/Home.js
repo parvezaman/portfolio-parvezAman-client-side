@@ -1,12 +1,31 @@
 import { Button } from '@mui/material';
 import React from 'react';
 import Resume from '../../Resume/Resume';
+import './Home.css';
 import myResume from '../../Resume/MdAmanullahParvez_Web_Developer_27_11_2021.pdf';
+import MyProjects from '../MyProjects/MyProjects';
 const Home = () => {
     return (
         <div>
-            <h3>This is Home</h3>
-            <Button><a target="_blank" href={myResume} download>Click to download</a></Button>
+            {/* <img className="img-fluid w-100" src="https://i.ibb.co/HFx26fT/bg.jpg" alt="" /> */}
+            <div className="landing-page d-md-flex justify-content-center align-items-center">
+                <div className="w-75 container">
+                    <h3 className="text-white">Assalamu Alaikum...</h3>
+                    <h1 className="text-white">Hello there !</h1>
+                    
+                    <h5 className="text-white">It's very nice to meet you! Please check out my Resume</h5>
+
+                    <Button variant="outlined"><a className="download-link" target="_blank" href={myResume} download>Download Resume</a></Button>
+                    
+                </div>
+                <div>
+                    <img className="img-fluid" src="https://i.ibb.co/YW3f68b/no-bg.png" alt="" />
+                </div>
+            </div>
+                <h2 className="text-center mt-5">My Projects</h2>
+            <div>
+                <MyProjects/>
+            </div>
         </div>
     );
 };
