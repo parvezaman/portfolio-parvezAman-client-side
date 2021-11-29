@@ -17,6 +17,9 @@ const MyProjects = () => {
                   <Card.Title>{project.name}</Card.Title>
                   <Card.Text>
                    {project.description}
+                   <p><a target="_blank" href={project.liveLink}>Live Link</a></p>
+                   <p><a target="_blank" href={project.gitClient}>GitHub Client</a></p>
+                   <p><a target="_blank" href={project.gitServer}>GitHub Server</a></p>
                   </Card.Text>
                   <Button variant="primary">See Details</Button>
                 </Card.Body>
