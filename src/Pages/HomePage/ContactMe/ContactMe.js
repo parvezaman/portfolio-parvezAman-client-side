@@ -17,7 +17,7 @@ const ContactMe = () => {
         e.target.reset();
     };
     return (
-        <div className="contact-form">
+        <div className="contact-form mt-5">
             <form ref={form} onSubmit={sendEmail}>
                 <input placeholder="Your Name" type="text" name="from_name" />
                 <input placeholder="Your email" type="email" name="email" />

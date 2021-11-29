@@ -7,6 +7,7 @@ import About from './Pages/About/About';
 import Navigation from './Pages/Shared/Navigation/Navigation';
 import NotFound from './Pages/NotFound/NotFound';
 import Resume from './Pages/Resume/Resume';
+import ContactMe from './Pages/HomePage/ContactMe/ContactMe';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/resume">
             <Resume />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
           </Route>
           <Route path="*">
             <NotFound />

@@ -28,6 +28,7 @@ const Home = () => {
                 <MyProjects/>
             </div>
             <div className="d-flex flex-column mb-5">
+                <h3 className="mt-5 text-center text-primary mb-3">Contact me</h3>
                 <ContactMe/>
             </div>
         </div>

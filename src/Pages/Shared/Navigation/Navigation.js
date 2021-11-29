@@ -77,14 +77,14 @@ const Navigation = () => {
                     </ListItemText>
                 </ListItem>
                 <Divider />
-                {/* <ListItem button>
+                <ListItem button>
                     
                     <ListItemText>
-                        <Link className={mobileNavItem} to='/dashboard'>Dashboard</Link>
+                        <Link className={mobileNavItem} to='/contact'>Contact Me</Link>
                     </ListItemText>
                 </ListItem>
                 <Divider />
-                <ListItem button>
+                {/* <ListItem button>
                     
                     <ListItemText>
                         <Link className={mobileNavItem} to='/login'>Login</Link>
@@ -119,6 +119,7 @@ const Navigation = () => {
                         <Box className={navItemContainer}>
                             <NavLink className={navItem} to="/home" ><Button color="inherit" sx={{ fontSize: '13px' }}>Home</Button></NavLink>
                             <NavLink className={navItem} to="/resume"><Button sx={{ fontSize: '13px' }} color="inherit">Resume</Button></NavLink>
+                            <NavLink className={navItem} to="/contact"><Button sx={{ fontSize: '13px' }} color="inherit">Contact Me</Button></NavLink>
 
 
                             {/* {
