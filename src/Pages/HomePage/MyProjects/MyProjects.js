@@ -30,7 +30,7 @@ const MyProjects = () => {
                             <p className="h5">
                                 <a className="p-1" title="live-site-link" target="_blank" href={project.liveLink}><SiFirebase /></a>
                                 <a className="p-1" title="gitHub-client-side-codes" target="_blank" href={project.gitClient}><AiFillGithub /></a>
-                                <a className="p-1" title="gitHub-server-side-codes" target="_blank" href={project.gitServer}><FaDigitalTachograph /></a>
+                                {project.gitServer && <a className="p-1" title="gitHub-server-side-codes" target="_blank" href={project.gitServer}><FaDigitalTachograph /></a>}
                             </p>
                         </Card.Text>
                         <Button onClick={()=>handleDetails(project._id)} variant="primary">See Details</Button>
