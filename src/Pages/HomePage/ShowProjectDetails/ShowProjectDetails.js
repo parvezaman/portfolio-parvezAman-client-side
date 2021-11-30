@@ -28,7 +28,7 @@ const ShowProjectDetails = () => {
                 {
                     imgLink.map(image => <figure>
                         <img className="img-fluid border border-dark border-3 mb-3 w-75 d-block ms-auto me-auto" src={image.link} alt="" />
-                        <figcaption className="text-center h3 fw-bold border border-3 border-info">{image.caption}</figcaption>
+                        <figcaption className="text-center h6 fw-bold border border-3 border-info">{image.caption}</figcaption>
                     </figure>)
                 }
             </div>
