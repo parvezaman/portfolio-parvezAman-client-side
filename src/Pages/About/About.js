@@ -1,9 +1,10 @@
 import React from 'react';
-
+import myself from './About.JPG';
+import './About.css';
 const About = () => {
     return (
-        <div>
-            <h3>This is About page</h3>
+        <div className="about">
+            <img className="img-fluid d-block ms-auto me-auto" src={myself} alt="" />
         </div>
     );
 };

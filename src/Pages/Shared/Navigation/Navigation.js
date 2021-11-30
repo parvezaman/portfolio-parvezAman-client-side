@@ -84,13 +84,20 @@ const Navigation = () => {
                     </ListItemText>
                 </ListItem>
                 <Divider />
-                {/* <ListItem button>
+                <ListItem button>
                     
                     <ListItemText>
-                        <Link className={mobileNavItem} to='/login'>Login</Link>
+                        <Link className={mobileNavItem} to='/about'>About Me</Link>
                     </ListItemText>
                 </ListItem>
-                <Divider /> */}
+                <Divider />
+                <ListItem button>
+                    
+                    <ListItemText>
+                        <Link className={mobileNavItem} to='/blogs'>My Blogs</Link>
+                    </ListItemText>
+                </ListItem>
+                <Divider />
 
             </List>
 
@@ -113,13 +120,15 @@ const Navigation = () => {
                             <MenuIcon />
                         </IconButton>
                         <Typography className={ourNavLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <img style={{width:'35px'}} src="https://i.ibb.co/3dykCd4/121573997-2706873479572031-3140401387895271813-o-removebg-preview-1.jpg" alt="" /> MdAmanUllahParvez
+                            <img className="rounded-circle" style={{width:'35px'}} src="https://i.ibb.co/3dykCd4/121573997-2706873479572031-3140401387895271813-o-removebg-preview-1.jpg" alt="" /> PravezAman...
                         </Typography>
 
                         <Box className={navItemContainer}>
                             <NavLink className={navItem} to="/home" ><Button color="inherit" sx={{ fontSize: '13px' }}>Home</Button></NavLink>
                             <NavLink className={navItem} to="/resume"><Button sx={{ fontSize: '13px' }} color="inherit">Resume</Button></NavLink>
                             <NavLink className={navItem} to="/contact"><Button sx={{ fontSize: '13px' }} color="inherit">Contact Me</Button></NavLink>
+                            <NavLink className={navItem} to="/about"><Button sx={{ fontSize: '13px' }} color="inherit">About Me</Button></NavLink>
+                            <NavLink className={navItem} to="/blogs"><Button sx={{ fontSize: '13px' }} color="inherit">My Blogs</Button></NavLink>
 
 
                             {/* {

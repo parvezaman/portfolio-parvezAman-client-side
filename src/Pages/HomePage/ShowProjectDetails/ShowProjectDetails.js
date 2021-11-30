@@ -8,13 +8,7 @@ const ShowProjectDetails = () => {
     const { id } = useParams();
     const [project, setProject] = useState({});
     const [imgLink, setImgLink] = useState([]);
-    // useEffect(() => {
-    //     fetch(`http://localhost:5000/myprojects/${id}`)
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data);
-    //             setProject(data)})
-    // }, []);
+    
     useEffect(() => {
         async function fetchMyApi() {
             let res = await fetch(`http://localhost:5000/myprojects/${id}`)
@@ -25,9 +19,7 @@ const ShowProjectDetails = () => {
         fetchMyApi()
     }, [])
     const { name, description, images, gitClient, liveLink, gitServer, usedTech } = project;
-    // for (const image of images){
-    //     setImgLink(image.link)
-    // }
+    
     return (
         <div>
             <h1 className="text-center">You are seeing Details of <span className="text-danger">{name}</span> Project</h1>
