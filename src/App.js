@@ -10,6 +10,7 @@ import Resume from './Pages/Resume/Resume';
 import ContactMe from './Pages/HomePage/ContactMe/ContactMe';
 import ShowProjectDetails from './Pages/HomePage/ShowProjectDetails/ShowProjectDetails';
 import Blogs from './Pages/Blogs/Blogs';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <NotFound />
           </Route>
         </Switch>
+        <Footer />
       </Router >
     </div >
   );

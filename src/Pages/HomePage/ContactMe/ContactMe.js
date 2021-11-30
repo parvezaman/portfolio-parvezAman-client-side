@@ -19,10 +19,10 @@ const ContactMe = () => {
     return (
         <div className="contact-form mt-5">
             <form ref={form} onSubmit={sendEmail}>
-                <input placeholder="Your Name" type="text" name="from_name" />
-                <input placeholder="Your email" type="email" name="email" />
-                <input placeholder="Subject" type="text" name="subject" />
-                <textarea placeholder="Your Message" name="message" />
+                <input required placeholder="Your Name" type="text" name="from_name" />
+                <input required placeholder="Your email" type="email" name="email" />
+                <input required placeholder="Subject" type="text" name="subject" />
+                <textarea required placeholder="Your Message" name="message" />
 
                 <input type="submit" value="Send" />
             </form>
