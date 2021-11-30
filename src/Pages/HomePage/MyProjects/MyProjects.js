@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 const MyProjects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/myprojects')
+        fetch('https://cryptic-reaches-07037.herokuapp.com/myprojects')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, []);

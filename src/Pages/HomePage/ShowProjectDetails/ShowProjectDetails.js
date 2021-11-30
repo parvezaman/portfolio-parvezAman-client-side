@@ -11,7 +11,7 @@ const ShowProjectDetails = () => {
     
     useEffect(() => {
         async function fetchMyApi() {
-            let res = await fetch(`http://localhost:5000/myprojects/${id}`)
+            let res = await fetch(`https://cryptic-reaches-07037.herokuapp.com/myprojects/${id}`)
             res = await res.json()
             setProject(res)
             setImgLink(res.images)
