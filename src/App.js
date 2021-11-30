@@ -8,6 +8,7 @@ import Navigation from './Pages/Shared/Navigation/Navigation';
 import NotFound from './Pages/NotFound/NotFound';
 import Resume from './Pages/Resume/Resume';
 import ContactMe from './Pages/HomePage/ContactMe/ContactMe';
+import ShowProjectDetails from './Pages/HomePage/ShowProjectDetails/ShowProjectDetails';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <ContactMe />
+          </Route>
+          <Route path="/project/:id">
+            <ShowProjectDetails />
           </Route>
           <Route path="*">
             <NotFound />
