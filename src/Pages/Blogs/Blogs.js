@@ -19,7 +19,10 @@ const Blogs = () => {
                     <li>The next step is called painting. Which is displaying the page on the device screen through implementing the rules.</li>
                 </ul>
 
-                <img className='img-fluid' src={cssWorkFlow} alt="" />
+                <figure>
+                    <img className='img-fluid' src={cssWorkFlow} alt="" />
+                    <figcaption className='text-center text-primary'>CSS workflow in a nutshell</figcaption>
+                </figure>
 
                 <h3>Now what is DOM and why is it so important?</h3>
                 <p>All the elements, attributes, and texts in the HTML document are arranged in a tree-like arrangement. It is organized this way because it helps to debug the HTML document and it's easier to implement the CSS rules. As it requires less energy to find nodes if they are arranged in a systematic way.</p>
