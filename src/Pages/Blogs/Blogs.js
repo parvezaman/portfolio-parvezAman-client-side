@@ -20,7 +20,7 @@ const Blogs = () => {
                 </ul>
 
                 <figure>
-                    <img className='img-fluid' src={cssWorkFlow} alt="" />
+                    <img className='img-fluid d-block mx-auto' src={cssWorkFlow} alt="" />
                     <figcaption className='text-center text-primary'>CSS workflow in a nutshell</figcaption>
                 </figure>
 
