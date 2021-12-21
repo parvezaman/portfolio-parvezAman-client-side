@@ -7,6 +7,7 @@ const Blogs = () => {
     return (
         <Container>
             <article>
+                <hr />
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 01</h1>
                 <h1>How does CSS Work?</h1>
                 <p>Have you ever wondered? You just have written a Stylesheet and imported it into your HTML document. Now how does the browser know which rule to apply on which portion of your HTML and how do they render all these things? This is going to be discussed here today in some simplified steps if Allah SWT grants us. First of all, we need to know that different browsers use different CSS parsers. For example, Chrome and Opera use <strong>Webkit Fork</strong> called <strong>Blink</strong>, Safari uses <strong>Webkit2</strong>,  Mozilla uses <strong>Gecko</strong>, and so on. But more or less all these engines work in the same manner. Thats why a simplified and common scenario is presented here.</p>
@@ -31,6 +32,15 @@ const Blogs = () => {
                 <p>Well, CSS is being updated over time and it keeps updating. So, such an issue may come up where the user uses a back-dated browser that doesn't recognize the latest CSS rule. Or the developer misspells a rule. </p>
                 <p>In such cases, the browser simply ignores that rule and jumps onto the next rule or the next node. This is also why the DOM tree is necessary. </p>
 
+                <hr />
+            </article>
+            <br /><br /><br />
+
+            <article>
+                <hr />
+                <h1 className='text-center text-danger mb-3 mt-3'>Article: 02</h1>
+
+                <hr />
             </article>
         </Container>
     );
