@@ -7,7 +7,7 @@ const Blogs = () => {
     return (
         <Container>
             <article>
-                <h1 className='text-center text-primary mb-3 mt-3'>Article: 01</h1>
+                <h1 className='text-center text-danger mb-3 mt-3'>Article: 01</h1>
                 <h1>How does CSS Work?</h1>
                 <p>Have you ever wondered? You just have written a Stylesheet and imported it into your HTML document. Now how does the browser know which rule to apply on which portion of your HTML and how do they render all these things? This is going to be discussed here today in some simplified steps if Allah SWT grants us. First of all, we need to know that different browsers use different CSS parsers. For example, Chrome and Opera use <strong>Webkit Fork</strong> called <strong>Blink</strong>, Safari uses <strong>Webkit2</strong>,  Mozilla uses <strong>Gecko</strong>, and so on. But more or less all these engines work in the same manner. Thats why a simplified and common scenario is presented here.</p>
                 <ul>
