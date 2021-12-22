@@ -3,6 +3,11 @@ import { Container } from 'react-bootstrap';
 import './Blogs.css';
 import bgImage from './soon.jpg';
 import cssWorkFlow from "./CSSWiorkflow.JPG";
+import img2_1 from "./Article2/1.png";
+import img2_2 from "./Article2/2.png";
+import img2_3 from "./Article2/3.png";
+import img2_4 from "./Article2/4.png";
+import img2_5 from "./Article2/5.png";
 const Blogs = () => {
     return (
         <Container>
@@ -39,6 +44,63 @@ const Blogs = () => {
             <article>
                 <hr />
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 02</h1>
+
+                <h1>Let's understand Class in ES6</h1>
+
+                <p>In spite of being an Object-Oriented Programming (OOP) language, JavaScript didn't have any “Class” concept before ES6. Some programmers coming from another programming-language background seem a bit awkward because of this and get confused if JavaScript is really an OOP or not. The main difference between other OOP and JavaScript is, javascript is a prototype-based language and others are class-based languages. Still in ES6 JavaScript hasn't come with actual class components but as a syntactical sugar. It's just another form of function constructor.</p>
+
+                <p> It was possible in ES5 to use function constructor as follows,</p>
+
+                <figure>
+                    <img className='img-fluid d-block mx-auto' src={img2_1} alt="" />
+                    <figcaption className='text-center text-primary'>Function constructor in ES5</figcaption>
+                </figure>
+
+                <p>But in ES6 we use class as follows,</p>
+
+                <figure>
+                    <img className='img-fluid d-block mx-auto' src={img2_2} alt="" />
+                    <figcaption className='text-center text-primary'>class constructor in ES6</figcaption>
+                </figure>
+
+                <p>Seems so familiar right?! </p>
+
+                <p>In  JavaScript, we can divide the class into 2 divisions as functions as follows,</p>
+
+                <ul>
+                    <li>Class statement</li>
+                    <li>Class expression</li>
+                </ul>
+
+                <h3>Class statement</h3>
+                <p>To state the class we must start with the “class” keyword. And a name must be provided. Conventionally we use uppercase for the first letter of the class name. For example,</p>
+
+                <figure>
+                    <img className='img-fluid d-block mx-auto' src={img2_3} alt="" />
+                    <figcaption className='text-center text-primary'>Class Statement</figcaption>
+                </figure>
+
+                <p>Also stated above examples can be followed</p>
+
+                <h3>Class expression</h3>
+                <p>Like the function expression, class expression can be assigned with a variable.</p>
+
+                <figure>
+                    <img className='img-fluid d-block mx-auto' src={img2_4} alt="" />
+                    <figcaption className='text-center text-primary'>Class Expression</figcaption>
+                </figure>
+
+                <p>There are few differences between class and function here. Such as class isnt hoisted as the function. Not even class statements. That means you can call a function before declaration of the function.  But you can not use a class before declaration. </p>
+
+                <h2>Prototype based inheritance in class</h2>
+
+                <p>Because of being a syntactical sugar, there is difference in  inheritance. In ES5 we used to assign new method using prototype. But in ES6 we can even assign new method outside the main class constructor. for example,</p>
+
+                <figure>
+                    <img className='img-fluid d-block mx-auto' src={img2_5} alt="" />
+                    <figcaption className='text-center text-primary'>Prototype based inheritance in class</figcaption>
+                </figure>
+
 
                 <hr />
             </article>
