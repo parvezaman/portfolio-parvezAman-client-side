@@ -48,6 +48,7 @@ const Blogs = () => {
 
                 <hr />
             </article>
+
             <br /><br /><br />
 
             <article>
@@ -113,7 +114,9 @@ const Blogs = () => {
 
                 <hr />
             </article>
+
             <br /><br /><br />
+
             <article>
                 <hr />
 
@@ -208,6 +211,46 @@ const Blogs = () => {
                     <img className='img-fluid d-block mx-auto' src={img3_9} alt="" />
                     <figcaption className='text-center text-primary'>The “new” keyword rules</figcaption>
                 </figure>
+
+                <hr />
+            </article>
+
+            <br /><br /><br />
+
+            <article>
+                <hr />
+                <h1 className='text-center text-danger mb-3 mt-3'>Article: 04</h1>
+                <h1>How can you increase the performance of React App?</h1>
+                <p>Improving performance is one of the most important aspects of developing a React app. Not only speed but also user experience also matters. Developers must check out the app's performance before handing it over to the client. Several measures can be taken to increase the performance of a React App and a few of them are given below,</p>
+
+                <ul>
+                    <li>
+                        <h3>To use React.Fragment instead of adding an extra node to the DOM</h3>
+                        <p>As we know, JavaScript doesn't return more than one output. But sometimes we need to render multiple elements from a React Module/component. To do so sometimes developers keep all the returned elements into a single “div” or something. Which can affect the performance of the app. Because it adds an unnecessary extra node to the DOM. DOM is expensive and requires a lot of energy to render so it decreases the performance of the app. </p>
+                        <p>So the possible solution can be adding React.Fragment instead of elements (eg. div). A fragment can be applied both like &#60;React.Fragment&gt; &lt;ltReact.Fragment /&#62; or &#60;&#62; &#60;/&#62;.</p>
+                    </li>
+                    <li>
+                        <h3>Try  using production build</h3>
+                        <p>To enhance app performance another step to be taken that is to bundle up the whole app in a single package before deploying. React app remains in development mode by default, which includes all warnings. Which can be useful for development purposes but in terms of performance it makes things a bit slower than usual, also increases the app size. By using “npm run build” we can bundle up the app and then by deploying the “build” folder we can enhance the performance.</p>
+                    </li>
+                    <li>
+                        <h3>To use React.Lazy</h3>
+                        <p>React Lazy is used for dynamic import. It calls a function only when it is necessary. Also, it allows the asynchronous function to use an intermediate function to run while the lazy component completes loading. </p>
+                    </li>
+                    <li>
+                        <h3>Dependency optimization</h3>
+                        <p>In terms of application build size, its wort checking installed dependencies and how much codes of those dependencies you are using. By uninstalling  unused dependencies you cna reduce build size. Also for example you have 100+ methods but you are using only 35, you can remove the unused methods to increase performance.
+</p>
+                    </li>
+                    <li>
+                        <h3>Avoid unnecessary re-rendering</h3>
+                        <p>Sometimes we get a few functions as well as CSS rules which keep re-rendering unnecessarily. We must avoid these to make our performance better. We can use several npm packages like why-did-you-render to identify and get rid of these re-rendering rules and functions.</p>
+                    </li>
+                    <li>
+                        <h3>Avoid in-line functions</h3>
+                        <p>When a function is defined and called instantly inside the render method of the React component, it will be called an in-line function. There are several problems with these in-line functions, for example, in-line functions are always called even if the props/state isn’t changed. Also, the memory footprint of the app is increased this way. So the possible solution might be, to pull the inline functions out of the render method. </p>
+                    </li>
+                </ul>
 
                 <hr />
             </article>
