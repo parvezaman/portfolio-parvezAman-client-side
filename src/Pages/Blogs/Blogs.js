@@ -17,6 +17,7 @@ import img3_6 from "./Article3/6.png";
 import img3_7 from "./Article3/7.png";
 import img3_8 from "./Article3/8.png";
 import img3_9 from "./Article3/9.png";
+import img5_1 from "./Article5/5.1.JPG";
 const Blogs = () => {
     return (
         <Container>
@@ -240,7 +241,7 @@ const Blogs = () => {
                     <li>
                         <h3>Dependency optimization</h3>
                         <p>In terms of application build size, its wort checking installed dependencies and how much codes of those dependencies you are using. By uninstalling  unused dependencies you cna reduce build size. Also for example you have 100+ methods but you are using only 35, you can remove the unused methods to increase performance.
-</p>
+                        </p>
                     </li>
                     <li>
                         <h3>Avoid unnecessary re-rendering</h3>
@@ -252,6 +253,68 @@ const Blogs = () => {
                     </li>
                 </ul>
 
+                <hr />
+            </article>
+            <br /><br /><br />
+            <article>
+                <hr />
+                <h1 className='text-center text-danger mb-3 mt-3'>Article: 05</h1>
+
+                <h1>SQL and MySQL</h1>
+                <p>First of all, we need to know about databases. </p>
+
+                <h3>So what is a database? </h3>
+
+                <p>The database is a collection of data that is stored in a computer and we can query the necessary data as we need. According to the relationship between the stored data in the database, we can divide the database system into two broad categories as;</p>
+
+                <ul>
+                    <li>
+                        <p><strong>Relational database:</strong>
+                            <p>For example, you run a shop/store. You want to post your store-related data into the database. In this case, you might have the data of your items/products, customers, customer preferences, items on demand, etc. You can store these data into a tabular format while you can make individual tables for each data set, for example, items, customers, etc., and in each case at least one field will have them in common. For example, the items table will must-have item id and customers buying product will have product id as well. In the same way, customer preference will have both customer id and product id in common at least. I mean there will be at least one field in common which is called relation. And this type of database is called a relational database. For example MySQL.</p>
+                            <p>While storing data in the database there might be chances of duplication which can lead to an error. To eradicate this error each row has an individual key which is called primary key. Also, this database maintains integrity rules. Which allows the database to avoid the recurrence of data aka duplication of data.</p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Non-Relational database:</strong>
+                            <p>Unlike the relational database, data are not arranged in tabular format. Also, there will be no related fields in common. For example MongoDB.</p>
+                        </p>
+                    </li>
+                </ul>
+
+                <h3>What is SQL?</h3>
+                <p>For example, you have put your data in the database. Now you want to access the database and show the data in the UI or you want to update any data in the database. So you must need a Query language to establish the communication or to perform the tasks. SQL AKA Structured Query Language which is used to access the database, operate, and manage. By using different syntax, you can add, delete, retrieve or access data in different databases. ANSI (American National Standards Institute)  maintains the standard of SQL. SQL is used to access the relational database eg. MySQL.</p>
+
+                <h3>What is MySQL</h3>
+                <p>MySQL is an open-source relational database management system that is currently owned and operated by Oracle Corporation. It was developed back in 1995 by MySQL AB. It uses SQL commands to perform specific functions/operations in a database. </p>
+
+                <h3>How do they work?</h3>
+                <p>When users want to send any data to the database first of all data is sent to the DBMS (Database management system) later on data will be sent to the Database. In the same way, in the case of showing data in the UI from the database DBMS receive the data first then it is shown to the UI. In the case of a relational database, RDBMS (Relational Database Management System) is used. The RDBMS (eg. MySQL) uses SQL language to perform actions eg, add, delete, update data, etc.</p>
+
+                <figure>
+                    <img className='img-fluid d-block mx-auto' src={img5_1} alt="" />
+                    <figcaption className='text-center text-primary'>How SQL and MySQL work</figcaption>
+                </figure>
+
+                <h3>Advantages of MySQL</h3>
+                <ul>
+                    <li>It can be used from different platforms (eg: Windows, Linux, Mac, etc)</li>
+                    <li>It can be used with different major languages (eg. PHP, NodeJS, Python, C#, etc)</li>
+                    <li>MySQL is an Open-Source software</li>
+                    <li>It is an RDBMS, so with a single command you can access multiple tables</li>
+                    <li>It is fast, secure, reliable, scalable and easy to use</li>
+                </ul>
+
+                <h3>Popular websites using MySQL</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Google</li>
+                    <li>Wikipedia</li>
+                    <li>Youtube</li>
+                    <li>Flicker</li>
+                    <li>Pinterest</li>
+                </ul>
                 <hr />
             </article>
         </Container>
