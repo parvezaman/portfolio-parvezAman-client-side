@@ -1,5 +1,6 @@
 .landing-page {
-  background-image: url("https://i.ibb.co/HFx26fT/bg.jpg");
+  /* background-image: url("https://i.ibb.co/HFx26fT/bg.jpg"); */
+  background-image: url("./2.jpg");
   max-width: 100%;
   /* height: auto; */
   display: block;
@@ -10,4 +11,7 @@
 .download-link{
     text-decoration: none;
     color: white;
+}
+.salam-text{
+  color: paleturquoise;
 }
