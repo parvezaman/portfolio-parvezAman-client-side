@@ -24,7 +24,7 @@ const Blogs = () => {
             <article>
                 <hr />
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 01</h1>
-                <h1>How does CSS Work?</h1>
+                <h1 className='text-primary'>How does CSS Work?</h1>
                 <p>Have you ever wondered? You just have written a Stylesheet and imported it into your HTML document. Now how does the browser know which rule to apply on which portion of your HTML and how do they render all these things? This is going to be discussed here today in some simplified steps if Allah SWT grants us. First of all, we need to know that different browsers use different CSS parsers. For example, Chrome and Opera use <strong>Webkit Fork</strong> called <strong>Blink</strong>, Safari uses <strong>Webkit2</strong>,  Mozilla uses <strong>Gecko</strong>, and so on. But more or less all these engines work in the same manner. Thats why a simplified and common scenario is presented here.</p>
                 <ul>
                     <li>First of all, the browser loads the HTML.</li>
@@ -56,7 +56,7 @@ const Blogs = () => {
                 <hr />
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 02</h1>
 
-                <h1>Let's understand Class in ES6</h1>
+                <h1 className='text-primary'>Let's understand Class in ES6</h1>
 
                 <p>In spite of being an Object-Oriented Programming (OOP) language, JavaScript didn't have any “Class” concept before ES6. Some programmers coming from another programming-language background seem a bit awkward because of this and get confused if JavaScript is really an OOP or not. The main difference between other OOP and JavaScript is, javascript is a <strong>prototype-based</strong> language and others are class-based languages. Still in ES6 JavaScript hasn't come with actual class components but as a <strong>syntactical sugar</strong>. It's just another form of function constructor.</p>
 
@@ -122,7 +122,7 @@ const Blogs = () => {
                 <hr />
 
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 03</h1>
-                <h1>“this” keyword in JavaScript</h1>
+                <h1 className='text-primary'>“this” keyword in JavaScript</h1>
                 <p>It is the most confusing and tricky topic in JavaScript. But I will try my best to make it as simple as possible if Allah wills. ‘this’ is a reserved keyword in JavaScript which means you can not declare a variable or function with this name.</p>
 
                 <p>The value of ‘this’ is determined depending on how the function is called. There are four rules that can help to understand the determination of the value of ‘this’, as</p>
@@ -221,7 +221,7 @@ const Blogs = () => {
             <article>
                 <hr />
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 04</h1>
-                <h1>How can you increase the performance of React App?</h1>
+                <h1 className='text-primary'>How can you increase the performance of React App?</h1>
                 <p>Improving performance is one of the most important aspects of developing a React app. Not only speed but also user experience also matters. Developers must check out the app's performance before handing it over to the client. Several measures can be taken to increase the performance of a React App and a few of them are given below,</p>
 
                 <ul>
@@ -260,7 +260,7 @@ const Blogs = () => {
                 <hr />
                 <h1 className='text-center text-danger mb-3 mt-3'>Article: 05</h1>
 
-                <h1>SQL and MySQL</h1>
+                <h1 className='text-primary'>SQL and MySQL</h1>
                 <p>First of all, we need to know about databases. </p>
 
                 <h3>So what is a database? </h3>
